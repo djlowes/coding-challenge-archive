@@ -46,3 +46,27 @@ function main() {
     /////////////// end coding here ////////////////////
     
 }
+
+
+// SECOND SOLUTION
+
+function main() {
+    var n_temp = readLine().split(' ');
+    var n = parseInt(n_temp[0]);
+    var k = parseInt(n_temp[1]);
+    a = readLine().split(' ');
+    a = a.map(Number);
+    
+    var ints = n;
+    var rotations = k;
+    var arr = a;
+    var run = function () {
+        var a = arr.splice(0, 1);
+        arr = arr.concat(a);
+    }
+    for (let i=2; i<=n; i++) {
+        run();
+    }  
+    console.log(parseFloat(arr.join().replace(/,/g, "")));
+    
+}
