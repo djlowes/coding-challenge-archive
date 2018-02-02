@@ -1,3 +1,5 @@
+// HackerRank > Cracking the Coding Interview > Bit Manipulation: Lonely Integer
+
 // Consider an array of  integers, , where all but one of the integers occur in pairs. In other words, every element in  occurs exactly twice except for one unique element.
 // Given , find and print the unique element.
 
